@@ -1,0 +1,62 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-gray: hsl(212, 45%, 89%);
+  --Grayish-blue: hsl(220, 15%, 55%);
+  --Dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "outfit", sans-serif;
+  background-color: var(--Light-gray);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.attribution {
+  padding-top: 1.5rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.QR {
+  width: 100%;
+  border-radius: 1.2rem;
+}
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 0.2rem;
+  color: var(--Dark-blue);
+}
+.subtitle {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 0rem;
+  text-align: center;
+  color: var(--Grayish-blue);
+}
+.card {
+  background-color: var(--White);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
+  margin: 0rem 2rem 0 2rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 375px) {
+  .card {
+    max-width: 20rem;
+  }
+}
